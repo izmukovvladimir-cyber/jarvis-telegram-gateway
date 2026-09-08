@@ -772,7 +772,7 @@ Three components form the complete system:
 ┌─────────────────────────┐  ┌──────────────────────────────┐
 │  Jarvis Telegram Gateway │  │  Claude Code (interactive)   │
 │  (this repo)             │  │  claude-code-telegram plugin │
-│                          │  │  (RichardAtCT)               │
+│                          │  │  (EdgeLab)                   │
 │  - Autonomous agent      │  │  - Interactive coding        │
 │  - Voice + media         │  │  - Standard Claude Code CLI  │
 │  - Session management    │  │  - Telegram as terminal      │
@@ -808,7 +808,7 @@ Three components form the complete system:
 | Component | Purpose | Repo |
 |-----------|---------|------|
 | **Jarvis Telegram Gateway** | Autonomous agent via Telegram (voice, media, sessions, memory) | [this repo](https://github.com/izmukovvladimir-cyber/jarvis-telegram-gateway) |
-| **claude-code-telegram** | Interactive Claude Code via Telegram (standard CLI over chat) | [RichardAtCT/claude-code-telegram](https://github.com/RichardAtCT/claude-code-telegram) |
+| **claude-code-telegram** | Interactive Claude Code via Telegram (standard CLI over chat) | [izmukovvladimir-cyber/claude-code-telegram](https://github.com/izmukovvladimir-cyber/claude-code-telegram) |
 | **Architecture docs** | Memory system, compression, hooks, skills, subagents | [public-architecture-claude-code](https://github.com/izmukovvladimir-cyber/public-architecture-claude-code) |
 | **OpenViking** | Semantic memory extraction and search | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) |
 
