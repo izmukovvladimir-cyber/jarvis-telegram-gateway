@@ -1,10 +1,10 @@
 # Jarvis Telegram Gateway
 
-> ## ⚠ DEPRECATED — переезжайте на [dashi-plugin-claude-code](https://github.com/qwwiwi/dashi-plugin-claude-code)
+> ## ⚠ DEPRECATED — переезжайте на [dashi-plugin-claude-code](https://github.com/izmukovvladimir-cyber/dashi-plugin-claude-code)
 >
 > **D-day: 2026-06-15.** Anthropic 15 июня 2026 разделяет billing: `claude -p` (Agent SDK) уходит в отдельный $200/мес pool. Этот gateway спавнит `claude -p` на каждое сообщение → после cutover каждое Telegram-сообщение станет расходом из SDK pool, а не из Max subscription.
 >
-> Новая архитектура держит **одну** живую interactive Claude Code сессию на агента — расход остаётся в Max. Полная миграция за ~30-60 минут на агента, см. [migration guide](https://github.com/qwwiwi/dashi-plugin-claude-code/blob/main/docs/04-migration-from-gateway.md).
+> Новая архитектура держит **одну** живую interactive Claude Code сессию на агента — расход остаётся в Max. Полная миграция за ~30-60 минут на агента, см. [migration guide](https://github.com/izmukovvladimir-cyber/dashi-plugin-claude-code/blob/main/docs/04-migration-from-gateway.md).
 >
 > **Сроки depreciation:**
 > - **до 2026-06-15** — gateway работает, переезжайте без спешки
@@ -61,7 +61,7 @@ claude --version
 ### 2. Install
 
 ```bash
-git clone https://github.com/qwwiwi/jarvis-telegram-gateway.git
+git clone https://github.com/izmukovvladimir-cyber/jarvis-telegram-gateway.git
 cd jarvis-telegram-gateway
 pip install -r requirements.txt
 ```
@@ -656,7 +656,7 @@ Gateway (every message) -> HOT (recent.md)
 
 Order matters: rotate-warm first (clear old), then trim-hot (add new to WARM), then compress-warm (re-compress if needed).
 
-Ready-to-use scripts: [public-architecture-claude-code/scripts/](https://github.com/qwwiwi/public-architecture-claude-code/tree/main/scripts)
+Ready-to-use scripts: [public-architecture-claude-code/scripts/](https://github.com/izmukovvladimir-cyber/public-architecture-claude-code/tree/main/scripts)
 
 ### How Sonnet compression works
 
@@ -807,9 +807,9 @@ Three components form the complete system:
 
 | Component | Purpose | Repo |
 |-----------|---------|------|
-| **Jarvis Telegram Gateway** | Autonomous agent via Telegram (voice, media, sessions, memory) | [this repo](https://github.com/qwwiwi/jarvis-telegram-gateway) |
+| **Jarvis Telegram Gateway** | Autonomous agent via Telegram (voice, media, sessions, memory) | [this repo](https://github.com/izmukovvladimir-cyber/jarvis-telegram-gateway) |
 | **claude-code-telegram** | Interactive Claude Code via Telegram (standard CLI over chat) | [RichardAtCT/claude-code-telegram](https://github.com/RichardAtCT/claude-code-telegram) |
-| **Architecture docs** | Memory system, compression, hooks, skills, subagents | [public-architecture-claude-code](https://github.com/qwwiwi/public-architecture-claude-code) |
+| **Architecture docs** | Memory system, compression, hooks, skills, subagents | [public-architecture-claude-code](https://github.com/izmukovvladimir-cyber/public-architecture-claude-code) |
 | **OpenViking** | Semantic memory extraction and search | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) |
 
 ## Agent Workspace Structure

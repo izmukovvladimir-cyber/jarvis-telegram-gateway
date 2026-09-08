@@ -1,6 +1,6 @@
 # Deprecation Notice
 
-`jarvis-telegram-gateway` is deprecated. Migrate to [qwwiwi/dashi-plugin-claude-code](https://github.com/qwwiwi/dashi-plugin-claude-code) before **2026-06-15**.
+`jarvis-telegram-gateway` is deprecated. Migrate to [izmukovvladimir-cyber/dashi-plugin-claude-code](https://github.com/izmukovvladimir-cyber/dashi-plugin-claude-code) before **2026-06-15**.
 
 ## Why
 
@@ -31,7 +31,7 @@ You don't have to throw anything away — the new architecture replaces only the
 
 ## How to migrate
 
-Full guide: https://github.com/qwwiwi/dashi-plugin-claude-code/blob/main/docs/04-migration-from-gateway.md
+Full guide: https://github.com/izmukovvladimir-cyber/dashi-plugin-claude-code/blob/main/docs/04-migration-from-gateway.md
 
 Short version:
 1. Snapshot everything (gateway, workspace, secrets, systemd unit)
@@ -42,9 +42,9 @@ Short version:
 
 ## Help
 
-- Issues (in the NEW repo): https://github.com/qwwiwi/dashi-plugin-claude-code/issues with tag `migration`
+- Issues (in the NEW repo): https://github.com/izmukovvladimir-cyber/dashi-plugin-claude-code/issues with tag `migration`
 - Если переезд невозможен по техническим причинам — открывайте issue с тегом `cant-migrate`
 
 ## What about new features in this gateway?
 
-After **2026-05-17**, this repo is in feature-freeze. Only security fixes will be merged. New features go into [dashi-plugin-claude-code](https://github.com/qwwiwi/dashi-plugin-claude-code).
+After **2026-05-17**, this repo is in feature-freeze. Only security fixes will be merged. New features go into [dashi-plugin-claude-code](https://github.com/izmukovvladimir-cyber/dashi-plugin-claude-code).
